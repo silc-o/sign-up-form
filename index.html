@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="style.css">
-  <title>Document</title>
+  <title>Sign up for a trip to the moon!</title>
 </head>
 <body>
   <div class="form-container">
@@ -21,25 +21,25 @@
         <span class="line"></span>            
       </div>
       
-      <form>
+      <form action="#" method="get">
         <div class="form-content">
-          <label>First Name</label>
-          <input type="text">
+          <label for="firstname">First Name</label>
+          <input type="text" placeholder="Enter your first name" required>
 
-          <label>Last Name</label>
-          <input type="text">
+          <label for="lastname">Last Name</label>
+          <input type="text" placeholder="Enter your last name" required>
 
-          <label>Email</label>
-          <input type="email">
+          <label for="email">Email</label>
+          <input type="email" placeholder="Example@gmail.com" required>
 
-          <label>Phone Number</label>
-          <input type="number">
+          <label for="phonenumber">Phone Number</label>
+          <input type="number" placeholder="09874569357" maxlength="11" required>
 
-          <label>Password</label>
-          <input type="password">
+          <label for="password">Password</label>
+          <input type="password" placeholder="Create your password" required>
 
-          <label>Confirm Password</label>
-          <input type="password">
+          <label for="confirmpass">Confirm Password</label>
+          <input type="password" placeholder="Confirm your password" required>
 
           <button type="submit">Create Account</button>
         </div>
