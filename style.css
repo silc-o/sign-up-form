@@ -19,7 +19,7 @@ body {
   align-items: center;
   min-height: 100vh;
 
-  font-family: "Quicksand", sans-serif;
+  font-family: "serif";
 
   background-image:url("../images/moon.jpg");
   background-repeat: no-repeat;
@@ -31,6 +31,7 @@ body {
 .form-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   width: 100%;
   max-width: 350px;
@@ -41,21 +42,75 @@ body {
   border-radius: 40px;
 }
 
+.form-section{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width:100%;
+  gap: 0.5rem;
+  color: white;
+}
+
 .form-content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
 
-  width: 80%;
   gap: 0.5rem;
-  margin: 1rem 2rem;
+  padding: 1rem 2rem;
+  width: 350px;
   
   color: white;
 }
+
+
 
 .logo {
   height: 80px;
   width: 80px;
   display: block;
   margin: 0 auto;
+}
+
+.header {
+  margin: 0 auto;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(var(--secondary-color) , white);
+  background-clip: text;
+  color: transparent;
+}
+
+.slogan {
+  margin: 0 auto;
+  font-size: 1rem;
+  font-family: serif;
+  color: lightyellow;
+}
+
+.divider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;        
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.line {
+  flex: 1;
+  height: 1px;
+}
+
+.divider .line:first-child {
+  background: linear-gradient(to left, var(--box-color), transparent);
+}
+
+.divider .line:last-child {
+  background: linear-gradient(to right, var(--box-color), transparent);
+}
+
+.divider .star{
+  font-size: 14px;
+    padding: 0 15px;
+    user-select: none;
 }
