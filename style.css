@@ -57,12 +57,10 @@ body {
 
   gap: 0.5rem;
   padding: 1rem 2rem;
-  width: 350px;
+  width: 21.8rem;
   
   color: white;
 }
-
-
 
 .logo {
   height: 80px;
@@ -111,6 +109,38 @@ body {
 
 .divider .star{
   font-size: 14px;
-    padding: 0 15px;
-    user-select: none;
+  padding: 0 15px;
+  user-select: none;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid var(--box-color);
+}
+
+label {
+  font-family: "Quicksand", serif;
+  font-size: 1rem;
+}
+
+button {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  align-self: center;
+
+  font-family: "Quicksand", serif;
+
+  padding: 0.5rem;
+  
+  margin: 1rem 0 0 0;
+
+  border-radius: 50px;
+  background: linear-gradient(to right, var(--secondary-color) , lightyellow);
+
+  border: 1px solid var(--box-color);
+  font-weight: 500;
+  font-size: 1rem;
 }
