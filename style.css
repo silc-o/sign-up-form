@@ -19,7 +19,7 @@ body {
   align-items: center;
   min-height: 100vh;
 
-  font-family: "serif";
+  font-family: serif;
 
   background-image:url("images/moon.jpg");
   background-repeat: no-repeat;
@@ -118,6 +118,13 @@ input {
   padding: 0.5rem;
   border-radius: 5px;
   border: 1px solid var(--box-color);
+
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
 }
 
 input:user-invalid {
@@ -130,8 +137,6 @@ label {
 }
 
 button {
-  display: flex;
-  flex-direction: column;
   width: 70%;
   align-self: center;
 
