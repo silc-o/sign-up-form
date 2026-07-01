@@ -4,11 +4,24 @@
   box-sizing: border-box;
 }
 
+:root {
+  --main-color: rgba(20,22,26,0.85);
+  --secondary-color: rgba(0, 22, 65, 0.85);
+  --text-color: #ffffff;
+  --box-color: #FFE600;
+}
+
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+
+  background-image:url("moon.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .form-container {
@@ -16,14 +29,20 @@ body {
   flex-direction: column;
   align-items: center;
 
-  border: 1px solid red;
-  width: 30%;
+  width: 20%;
   padding: 20px 0px;
+  
+  border: 1px solid var(--box-color);
+  background: linear-gradient(var(--main-color), var(--secondary-color));
+  border-radius: 40px;
 }
 
-.form-group {
+.form-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
   gap: 0.5rem;
+  
+  color: white;
 }
